@@ -7,7 +7,7 @@ def conversion(old):
     if is_number(old):
         return float(old)
 
-    direction = {'N':-1, 'S':1, 'E': -1, 'W':1}
+    direction = {'N':1, 'S':-1, 'E': 1, 'W':-1}
     new = old.replace(u'\xb0',' ').replace('\'',' ').replace('"',' ')    
     new = new.split()
     new_dir = new.pop()
